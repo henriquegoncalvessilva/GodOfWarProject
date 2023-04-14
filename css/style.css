@@ -1,0 +1,485 @@
+:root{
+    --backgroundBody: #000201;
+    --sizeContainer: 76.25rem;
+    --fontColorDefault: #FFFF;
+    --fontDefault:'Archivo';
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fontDefault);
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+body{
+    font-size: 62.5%;
+    color:var(--fontColorDefault) ;
+    background-color: var(--backgroundBody);
+    font-family: var(--fontDefault);
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+header{
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--backgroundBody);
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--sizeContainer);
+}
+
+.consoles{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.consoles span{
+    width: 2.6875rem;
+    padding: 0.1875rem 0.5rem 0.1875rem 0.4375rem;
+    height: 1.5rem;
+    border: 0.0938rem solid #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
+    color: #FFFFFF;
+}
+
+.consoles p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
+}
+
+.heroContainer{
+    width: 100% ;
+    max-width: var(--sizeContainer);
+
+}
+
+main{
+    width: 100%;
+    max-width: var(--sizeContainer);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .containerInfo{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.mainDescription{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
+
+main .star{
+    width: 0.375rem;
+    height: 0.375rem;
+}
+
+main .titleContainer{
+    display: flex;
+    flex-direction: column;
+    width: 43.6875rem;
+    height: 17.3125rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+main .titleContainer .mainTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.5rem;
+    line-height: 97.5%;
+    color: #FFFFFF;
+    font-stretch: 110%;
+}
+
+main .trailer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8125rem;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    position: relative;
+    margin-top: 4.8125rem;
+}
+
+main .trailer .buttonPlay{
+    position: absolute;
+    width: 2.375rem;
+    height: 2.375rem;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+
+main .trailer .borderPlayer{
+    border: 3px solid #3265EA;
+    box-shadow: 0px 20px 30px -10px rgba(8, 8, 11, 0.8);
+}
+
+main .payButtons {
+    display: flex;
+    align-items: center;
+}
+
+main .trailerGif{
+    width: 24rem;
+    height: 13.5rem;
+    border: 0.1875rem solid #3265EA;
+    box-shadow: 0rem 1.25rem 1.875rem -0.625rem rgba(8, 8, 11, 0.8);
+}
+
+main .payButtons .price{
+    padding: 1.125rem 2.25rem;
+    width: 9.875rem;
+    height: 3.5rem;
+    background: #FFFFFF;
+    color:#000000;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
+main .payButtons .buy{
+    padding: 1.125rem 2.25rem;
+    background: #3265EA;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+    border:none;
+}
+
+.containerInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--sizeContainer);
+    width: 100%;
+    margin: 0 auto;
+    height: 11.25rem;
+    background: var(--backgroundBody);
+}
+
+.containerInfos .info{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.containerInfos .info span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 160%;
+    color: #BDC2CB;
+}
+
+.containerInfos .info img{
+    width: 1.9644rem;
+    height: 1.9044rem;
+}
+
+.trailer .age{
+    display: flex;
+    align-items: center;
+    max-width: 18.75rem;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.8125rem;
+    margin-top: 2rem;
+    
+}
+
+.content{
+    width: 100%;
+    max-width: var(--sizeContainer);
+    display: flex;
+    flex-direction: row;
+}
+
+.content .cardAbout{
+    position: relative;
+    top: 8.375rem;
+    left: 2.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.about{
+    background: url(/assets/bg2.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+.about .containerInfo{
+    width: 35.0625rem;
+    margin-top: 10.125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+       
+}
+
+.about .containerInfo .titleContainer{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.75rem;
+
+}
+
+.title{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 130%;
+    color: #FFFFFF;
+    font-stretch: 110%;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 160%;
+    color: #BDC2CB;
+} 
+
+.characters{
+    background: url(/assets/bg3.png);
+    background-position: 0 14.375rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+.characters .charactersContainer{
+    position: relative;
+    top: 3.125rem;
+}
+
+.characters .charactersContainer .containerInfo{
+    position: relative;
+}
+
+.characters .containerInfo{
+    height: 23.1875rem;
+    width: 42rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.characters .containerInfo .titleContainer{
+    display: inherit;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.characters .containerInfo .titleContainer .description{
+    height: 7.25rem;
+    width: 35.0625rem;
+
+}
+
+.cardCharacters{
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    position: relative;
+ 
+}
+
+.card-character .thumb{
+    overflow: hidden;
+}
+
+.cardCharacters img{
+    height: fit-content;
+}
+
+.card-character img:hover{
+    scale: 1.1;
+    transition: all 0.5s;
+    filter: brightness(1.1)
+}
+.card-character img{
+    scale: 1;
+    transition: all 0.5s;
+    filter: brightness(0.7)
+
+}
+.cardCharacters .axe{
+    position: absolute;
+    transform: rotate(351deg);
+    left: -3.75rem;
+
+
+}
+
+.characters .slider{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 100%;
+    max-width: var(--sizeContainer);
+    height: 36.4375rem;
+    margin-bottom: 6.875rem;
+}
+
+.characters .slider .card-character{
+    width: 24rem;
+    height: 36.4375rem;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 86%;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-bottom: 6.875rem;
+    cursor: ew-resize;
+}
+
+.slider .card-character{
+
+}
+
+.slider .sliderInfo{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.slider .sliderInfo p{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    color: #FFFFFF;
+}
+
+.slider .sliderInfo span{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
+}
+
+.activeAxe{
+    animation-duration: 2s;
+    animation-name: playAxe;
+    transition: all 0.3s;
+    animation: 'playAxe' play;
+}
+
+
+.disableAxe{
+    animation-duration: 2s;
+    transition: all 0.3s;
+    opacity: 0;
+    animation-name: pauseAxe;
+}
+
+.santaMonica{
+    display: flex;
+    align-items: center;
+    gap: 2.875rem;
+    margin-top: 1.125rem;
+}
+.santaMonica p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+
+@keyframes playAxe {
+
+    0%{
+        opacity: 0;
+        left: 25rem;
+        transform: rotate(9deg);
+    }
+
+    100%{
+        opacity: 1;
+        left: -3.75rem ;
+        transform: rotate(351deg);
+    }
+    
+}
+
+@keyframes pauseAxe {
+
+    0%{
+        opacity: 1;
+        left: -3.75rem ;
+        transform: rotate(351deg);
+    }
+
+    100%{
+        opacity: 0;
+        left: 25rem;
+        transform: rotate(9deg);
+    }
+    
+}
